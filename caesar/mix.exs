@@ -5,7 +5,8 @@ defmodule Caesar.MixProject do
     [
       app: :caesar,
       escript: escript_config(),
-      version: "0.1.0",
+      version: "v0.1.0",
+      source_url: "https://github.com/Emperor-Jarlemagne/PotionMaking101/tree/main/caesar",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
