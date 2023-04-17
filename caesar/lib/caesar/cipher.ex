@@ -3,7 +3,7 @@ defmodule Caesar.Cipher do
 
   @alphabet_size Application.fetch_env!(:caesar, :alphabet_size)
   @moduledoc """
-  Caesar Cipher MOdule, which maps characters to new characters.
+  Caesar Cipher Module, which maps characters to new characters.
   """
   @doc """
   Encrypt the message by applying a mapping that shifts the albhabet by the 'shift' value
