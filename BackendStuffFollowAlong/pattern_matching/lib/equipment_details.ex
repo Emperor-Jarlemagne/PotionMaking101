@@ -17,7 +17,6 @@ defmodule EquipmentDetails do
   def item_details(:probe) do
     {2, :kg, 2}
   end
-
   def item_details(_other) do
     raise "unknown item"
   end

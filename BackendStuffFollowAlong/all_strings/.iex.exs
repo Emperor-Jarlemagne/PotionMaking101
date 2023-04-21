@@ -1,6 +1,6 @@
 # IEx.configure colors: [enabled: true]
 # IEx.configure colors: [ eval_result: [ :cyan, :bright ] ]
-IO.puts IO.ANSI.red_background() <> IO.ANSI.white() <> " ❄❄❄ Good Luck with Elixir ❄❄❄ " <> IO.ANSI.reset
+IO.puts IO.ANSI.red_background() <> IO.ANSI.white() <> " ❄❄❄ WAKKA WAKKA! ❄❄❄ " <> IO.ANSI.reset
 Application.put_env(:elixir, :ansi_enabled, true)
 timestamp = fn ->
   {_date, {hour, minute, _second}} = :calendar.local_time

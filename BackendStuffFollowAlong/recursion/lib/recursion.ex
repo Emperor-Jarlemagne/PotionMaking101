@@ -28,4 +28,14 @@ def format_equipment_list([head | tail]), do: [
   def occurence_count([value | tail], value), do: 1 + occurence_count(tail, value)
   def occurence_count([_head | tail], value), do: occurence_count(tail, value)
 
+  def partial_occurence(list, value) do
+    list
+    |> Enum.filter( fn x -> String.contains?(x, value) end)
+  end
+    # write recursive function that returns a list of values
+    # thta contains part of the value
+    # partial_occurence/2
+    # E.g. If i have "space", i want a return of all values that contain "space"
+
+
 end
