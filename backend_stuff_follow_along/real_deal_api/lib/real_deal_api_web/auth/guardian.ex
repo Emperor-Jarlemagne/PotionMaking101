@@ -26,7 +26,7 @@ defmodule RealDealApiWeb.Auth.Guardian do
     case Accounts.get_account_by_email(email) do
       nil -> {:error, :unauthorized}
       account ->
-        case validate_password(password, account.hash_pasword) do
+        case validate_password(password, account.hash_password) do
           true -> create_token(account)
           false ->{:error, :unauthorized}
         end
@@ -43,3 +43,5 @@ defmodule RealDealApiWeb.Auth.Guardian do
   end
 
 end
+
+# mix guradin.ge.secret = ILwkAuDf9bXdDPf1fILk5X9pis22jd63ju7ZpaPEUm4ZWjrCFPFx+3FFdFGpTZVR
