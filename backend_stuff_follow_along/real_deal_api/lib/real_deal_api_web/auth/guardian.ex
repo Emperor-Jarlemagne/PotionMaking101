@@ -44,4 +44,4 @@ defmodule RealDealApiWeb.Auth.Guardian do
 
 end
 
-# mix guradin.ge.secret = ILwkAuDf9bXdDPf1fILk5X9pis22jd63ju7ZpaPEUm4ZWjrCFPFx+3FFdFGpTZVR
+# mix guardian.gen.secret = ILwkAuDf9bXdDPf1fILk5X9pis22jd63ju7ZpaPEUm4ZWjrCFPFx+3FFdFGpTZVR

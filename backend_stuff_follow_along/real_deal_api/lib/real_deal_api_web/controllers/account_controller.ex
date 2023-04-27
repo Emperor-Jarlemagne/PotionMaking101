@@ -17,7 +17,7 @@ defmodule RealDealApiWeb.AccountController do
           {:ok, %User{} = _user} <- Users.create_user(account, account_params) do
       conn
       |> put_status(:created)
-      |> render(:show, account: account)
+      |> render(conn, :account, account: account)
     end
   end
 
