@@ -5,7 +5,6 @@ defmodule Binary do
  # DO GIF and BMP
  # BMP - 42 4D
  # GIF - 47 49 46 38 39 61
- # HINT: follow pattern for other image types
   def get_png_binary() do
     File.read!(Path.join("lib", "example_png.png"))
   end
